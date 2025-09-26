@@ -10,5 +10,7 @@ Data is sourced from a JSON file (`books.json`) and displayed dynamically using 
 
 - Display book list with cover image, title, author, and price
 - Responsive layout using CSS Grid and Flexbox
-- "New" button card for adding books (UI only)
+- Add "new" button function for format
+- using EventListener 
+- Add Delete button
 - Easy to extend with additional books or features
