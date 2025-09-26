@@ -1,6 +1,7 @@
 import React from "react";
 import BookList from "./BookList";
 import HoverButton from "./HoverButton";
+import ProductForm from "./components/ProductForm";
 import data from "../data/books.json";
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
       
       <div className="content">
         <div className="add-btn">
-          <HoverButton/>
+          <HoverButton >
+            <ProductForm />
+          </HoverButton>
         </div>
         <div className='books'>
         {data.map((book) => (

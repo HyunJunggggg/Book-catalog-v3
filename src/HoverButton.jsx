@@ -1,9 +1,26 @@
-function HoverButton() {
-  const HoverButtonLabel = "New";
+import { useRef } from "react";
+import './HoverButton.css';
+
+function HoverButton({btnLabel, children, btnClassName}) {
+  const buttonRef = useRef();
+
+  function openAdd(){
+    buttonRef.current.showModal();
+  }
   return (
-    <div className="book">
-      <button className="hover-button">{HoverButtonLabel}</button>
-    </div>
+    <>
+      <button onClick={openAdd} className={btnClassName || "hover-button"}>
+      {btnLabel || "New"}
+      </button>
+      
+      <dialog ref={buttonRef}>
+        {children}
+      </dialog>
+      
+      {/* <div className="book">
+        <button className="hover-button">{HoverButtonLabel}</button>
+      </div> */}
+    </>
   );
 }
 
