@@ -4,7 +4,29 @@ import HoverButton from "./HoverButton";
 import ProductForm from "./components/ProductForm";
 import data from "../data/books.json";
 
+// function Book({ label, background }) {
+// function remove(e) {
+//   if (e.target === e.currenttarget) {
+//     return;
+//   }
+
+//   if (e.target.tagName !== "SPAN") {
+//     return;
+//   }
+
+//   e.currentTarget.remove();
+// }
+
+// return (
+//   <div className="tile" style={{ background }} onClick={remove}>
+//     <p>{label}</p>
+//     <span> Delete </span>
+//   </div>
+// );
+// }
+
 function App() {
+
   return (
     <div className="app">
       <div className="header">
